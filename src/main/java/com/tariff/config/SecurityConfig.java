@@ -53,7 +53,10 @@ public class SecurityConfig {
                 // Vercel frontend deployment
                 "https://cs203-tariff-deploy.vercel.app",
                 // Include trailing slash variant (Origin header typically omits it)
-                "https://cs203-tariff-deploy.vercel.app/"
+                "https://cs203-tariff-deploy.vercel.app/",
+                // Render deployment
+                "https://test-project-voas.onrender.com",
+                "https://test-project-voas.onrender.com/"
         ));
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(Arrays.asList("Authorization", "Content-Type", "Accept"));
